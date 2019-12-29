@@ -1,0 +1,1865 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>154/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 25 15:31:10 EET 2019</td>
+</tr>
+<tr><td>Total time:</td><td>3883 seconds (3883131 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, After Meal, Low</td>
+<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;Low&gt; but was:&lt;High&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at englishArabic_TCs.ReadingsTCs.Add_BloodSugar(ReadingsTCs.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1182985125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1182985125'><pre>junit.framework.ComparisonFailure: expected:&lt;Low&gt; but was:&lt;High&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at englishArabic_TCs.ReadingsTCs.Add_BloodSugar(ReadingsTCs.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 80, After Meal, Low</td>
+<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;Low&gt; but was:&lt;High&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at englishArabic_TCs.ReadingsTCs.Add_BloodSugar(ReadingsTCs.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1234600900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1234600900'><pre>junit.framework.ComparisonFailure: expected:&lt;Low&gt; but was:&lt;High&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at englishArabic_TCs.ReadingsTCs.Add_BloodSugar(ReadingsTCs.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 181, 41, High</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: Add
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Blood_Pressure(AddNewReadingPage.java:362)
+	at englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure(ReadingsTCs.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@21e702b8 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=Add}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace77780590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77780590'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: Add
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Blood_Pressure(AddNewReadingPage.java:362)
+	at englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure(ReadingsTCs.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@21e702b8 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=Add}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 81, 60, Below Normal</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: readingsDiastolicAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.clear(&lt;generated&gt;)
+	at pages.PageBase.clearAndSetText(PageBase.java:106)
+	at pages.AddNewReadingPage.Add_Blood_Pressure(AddNewReadingPage.java:361)
+	at englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure(ReadingsTCs.java:229)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@468eff41 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=readingsDiastolicAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace441906696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace441906696'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: readingsDiastolicAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.clear(&lt;generated&gt;)
+	at pages.PageBase.clearAndSetText(PageBase.java:106)
+	at pages.AddNewReadingPage.Add_Blood_Pressure(AddNewReadingPage.java:361)
+	at englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure(ReadingsTCs.java:229)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@468eff41 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=readingsDiastolicAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+</pre></div></td>
+<td>50</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 50, Below Normal</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: HeartRateReadingsHomeaboveBelowNormalLabel
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getText(&lt;generated&gt;)
+	at pages.AddNewReadingPage.Add_Heart_Rate(AddNewReadingPage.java:387)
+	at englishArabic_TCs.ReadingsTCs.Add_Heart_Rate(ReadingsTCs.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3e94a6f6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=HeartRateReadingsHomeaboveBelowNormalLabel}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace352936958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace352936958'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: HeartRateReadingsHomeaboveBelowNormalLabel
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getText(&lt;generated&gt;)
+	at pages.AddNewReadingPage.Add_Heart_Rate(AddNewReadingPage.java:387)
+	at englishArabic_TCs.ReadingsTCs.Add_Heart_Rate(ReadingsTCs.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3e94a6f6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=HeartRateReadingsHomeaboveBelowNormalLabel}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+</pre></div></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 199, High</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: ReadingTypeAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Heart_Rate(AddNewReadingPage.java:379)
+	at englishArabic_TCs.ReadingsTCs.Add_Heart_Rate(ReadingsTCs.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@10587ce5 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=ReadingTypeAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1866408768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1866408768'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: ReadingTypeAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Heart_Rate(AddNewReadingPage.java:379)
+	at englishArabic_TCs.ReadingsTCs.Add_Heart_Rate(ReadingsTCs.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@10587ce5 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=ReadingTypeAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div></td>
+<td>37</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 40.1, High</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: ReadingTypeAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Temperature(AddNewReadingPage.java:399)
+	at englishArabic_TCs.ReadingsTCs.Add_Temperature(ReadingsTCs.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@16db70a0 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=ReadingTypeAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1919736411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919736411'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: ReadingTypeAddManualReadingTableTextField
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at pages.PageBase.clickOn(PageBase.java:198)
+	at pages.AddNewReadingPage.Add_Temperature(AddNewReadingPage.java:399)
+	at englishArabic_TCs.ReadingsTCs.Add_Temperature(ReadingsTCs.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@16db70a0 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TD247E-M011.local&apos;, ip: &apos;fe80:0:0:0:1c9f:209e:fae1:69f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.axa.mydoctor, databaseEnabled: false, deviceName: iPhone 6s plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: false, platform: MAC, platformName: iOS, platformVersion: 13.1.2, takesScreenshot: true, udid: 397ad5ca4c76b2e8fde361cbfef..., unicodeKeyboard: true, usePrebuiltWDA: true, webStorageEnabled: false}
+Session ID: d88dc5ca-41f3-4c5b-8938-2afbd6f74f95
+*** Element info: {Using=id, value=ReadingTypeAddManualReadingTableTextField}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div></td>
+<td>14</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 45.5, 157.4, Below Normal</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 47.7, 157.4, Normal</td>
+<td></td>
+<td>32</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 61.4, 157.4, Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 63.6, 157.4, Above Normal</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 72.7, 157.4, Above Normal</td>
+<td></td>
+<td>33</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 75, 157.4, Above Normal</td>
+<td></td>
+<td>38</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BMI()'><b>Add_BMI</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 97.7, 154.9, Above Normal</td>
+<td></td>
+<td>36</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Before Meal, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 72, Before Meal, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 73, Before Meal, Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 106, Before Meal, Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 107, Before Meal, Above Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 150, Before Meal, Above Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 151, Before Meal, Above Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 180, Before Meal, Above Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 181, Before Meal, High</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 300, Before Meal, High</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 301, Before Meal, High</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 900, Before Meal, High</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 81, After Meal, Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 140, After Meal, Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 141, After Meal, Above Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 160, After Meal, Above Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 161, After Meal, Above Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 240, After Meal, Above Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 241, After Meal, High</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 300, After Meal, High</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 301, After Meal, High</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_BloodSugar()'><b>Add_BloodSugar</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 900, After Meal, High</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 9, 5, Low</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 210, 40, Low</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 9, 41, Low</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 70, 120, Low</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 71, 41, Low</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 180, 49, Low</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 71, 50, Low</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 80, 120, Low</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 210, 110, High</td>
+<td></td>
+<td>57</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 81, 111, High</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 210, 120, High</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 200, 41, High</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 210, 120, High</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 71, 120, Low</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 210, 120, High</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 81, 50, Below Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 150, 59, Below Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 89, 110, Below Normal</td>
+<td></td>
+<td>58</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 90, 60, Below Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 99, 100, Below Normal</td>
+<td></td>
+<td>32</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, 60, Normal</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 139, 89, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 140, 60, Above Normal</td>
+<td></td>
+<td>32</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 150, 89, Above Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, 90, Above Normal</td>
+<td></td>
+<td>31</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 150, 100, Above Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 151, 50, Above Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 180, 100, Above Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 90, 101, Above Normal</td>
+<td></td>
+<td>30</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Blood_Pressure()'><b>Add_Blood_Pressure</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 180, 110, Above Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Bones_Mass()'><b>Add_Bones_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Below Normal</td>
+<td></td>
+<td>31</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Bones_Mass()'><b>Add_Bones_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 2.7, Below Normal</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Bones_Mass()'><b>Add_Bones_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 2.8, Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Bones_Mass()'><b>Add_Bones_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Fasceral_Fat()'><b>Add_Fasceral_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Fasceral_Fat()'><b>Add_Fasceral_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 99</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Low</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 40, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 41, Below Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 45, Below Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 46, Below Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 51, Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 90, Normal</td>
+<td></td>
+<td>25</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 91, Above Normal</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 110, Above Normal</td>
+<td></td>
+<td>25</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 111, Above Normal</td>
+<td></td>
+<td>65</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 130, Above Normal</td>
+<td></td>
+<td>51</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 131, High</td>
+<td></td>
+<td>34</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 139, High</td>
+<td></td>
+<td>40</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Heart_Rate()'><b>Add_Heart_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 140, High</td>
+<td></td>
+<td>55</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Low</td>
+<td></td>
+<td>31</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 33.2, Low</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 33.3, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 39.3, Normal</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 39.4, Above Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 44, Above Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 44.1, High</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Muscle_Mass()'><b>Add_Muscle_Mass</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, High</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 95, On Air, Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, On Air, Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 93, On Air, Below Normal</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 94, On Air, Below Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 91, On Air, Below Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 92, On Air, Below Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 89, On Air, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 90, On Air, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, On Air, Low</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 88, On Air, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 95, On Oxygen, Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, On Oxygen, Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 93, On Oxygen, Below Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 94, On Oxygen, Below Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 91, On Oxygen, Below Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 92, On Oxygen, Below Normal</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 89, On Oxygen, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 90, On Oxygen, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, On Oxygen, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Oxygen_Level()'><b>Add_Oxygen_Level</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 88, On Oxygen, Low</td>
+<td></td>
+<td>0</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Low</td>
+<td></td>
+<td>25</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 7, Low</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 8, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 9, Low</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 10, Below Normal</td>
+<td></td>
+<td>22</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 11, Below Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 12, Normal</td>
+<td></td>
+<td>21</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 18, Normal</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 19, Above Normal</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 20, Above Normal</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 21, Above Normal</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 25, Above Normal</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 26, High</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 30, High</td>
+<td></td>
+<td>23</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 31, High</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Respiration_Rate()'><b>Add_Respiration_Rate</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 60, High</td>
+<td></td>
+<td>20</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Steps()'><b>Add_Steps</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1000, Steps</td>
+<td></td>
+<td>18</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 20, Low</td>
+<td></td>
+<td>32</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 32.9, Low</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 33, Low</td>
+<td></td>
+<td>25</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 34.9, Low</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 35, Below Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 35.9, Below Normal</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 36, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 37.4, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 37.5, Above Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 37.9, Above Normal</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 38, Above Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 39, Above Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 39.1, High</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_Temperature()'><b>Add_Temperature</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 40, High</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Low</td>
+<td></td>
+<td>29</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 7.9, Low</td>
+<td></td>
+<td>32</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 8, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 20, Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 20.1, Above Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 31.9, Above Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 32, High</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Fat()'><b>Add_body_Fat</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, High</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 1, Below Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 49.9, Below Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 50, Normal</td>
+<td></td>
+<td>27</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 65, Normal</td>
+<td></td>
+<td>26</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 65.1, Above Normal</td>
+<td></td>
+<td>24</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.Add_body_Water()'><b>Add_body_Water</b><br>Test class: englishArabic_TCs.ReadingsTCs<br>Parameters: 100, Above Normal</td>
+<td></td>
+<td>28</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.ShowAllReadingsCells()'><b>ShowAllReadingsCells</b><br>Test class: englishArabic_TCs.ReadingsTCs</td>
+<td></td>
+<td>37</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+<tr>
+<td title='englishArabic_TCs.ReadingsTCs.login()'><b>login</b><br>Test class: englishArabic_TCs.ReadingsTCs</td>
+<td></td>
+<td>10</td>
+<td>englishArabic_TCs.ReadingsTCs@1a3869f4</td></tr>
+</table><p>
+</body>
+</html>
