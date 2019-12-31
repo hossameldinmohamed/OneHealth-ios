@@ -5,15 +5,12 @@
     <classes>
       <class name="englishArabic_TCs.ReadingsTCs">
         <methods>
-          <include name="Add_Blood_Pressure" invocation-numbers="8 18"/>
           <include name="getResult"/>
           <include name="CloseApp"/>
           <include name="ShowAllReadingsCells"/>
-          <include name="Add_Heart_Rate" invocation-numbers="5 15"/>
-          <include name="Add_Temperature" invocation-numbers="14"/>
           <include name="setup"/>
           <include name="launchApp"/>
-          <include name="Add_BloodSugar" invocation-numbers="12 13"/>
+          <include name="Add_BloodSugar"/>
           <include name="initializeObjects"/>
         </methods>
       </class> <!-- englishArabic_TCs.ReadingsTCs -->

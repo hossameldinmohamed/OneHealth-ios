@@ -4,8 +4,9 @@ public class configInputData {
 
 
 	// Excel sheet file path
-	public static final String ReadingexcelSheetPath = System.getProperty("user.dir") + "/src/test/java/TestData/ReadingsData7_SN2.xlsx";
+	public static final String ReadingexcelSheetEnglishPath= System.getProperty("user.dir") + "/src/test/java/TestData/ReadingsData7_SN2.xlsx";
 
+	public static final String ReadingexcelSheetArabicPath = System.getProperty("user.dir") + "/src/test/java/TestData/ReadingsData7_Arabic.xlsx";
 
 
 	// iOS configuration cap - My Phone - OneHealth
@@ -21,9 +22,9 @@ public class configInputData {
 
 
 	// User|Pass Application Data
-	public static final String phoneNubmer = "1019544789"; // 1006147962 //1019544789
+	public static final String phoneNubmer = "1019544789"; // 1006147962  
 	public static final String Password = "asdasdasd";
-
+    public static final String AppLanguage = "Arabic";
 
 
 	public static final String DeviceName_iOS = "iPhone 6s plus";

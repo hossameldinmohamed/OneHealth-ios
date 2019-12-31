@@ -30,27 +30,31 @@ public class sideMenu extends PageBase {
 
 	@FindBy(id = "action_more")
 	MobileElement sideMenu;
-
-	@FindBy(id = "tv_user_name")
-	MobileElement guestLabel;
-
-	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/view_settings']")
-	MobileElement setting;
-
-	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/viewpager'/*[1]")
-	MobileElement scrollView;
-
-	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/view_user_name]")
-	MobileElement UserNameContainer;
-
-	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/trudoctoolbar']/*[1]")
-	MobileElement editProfileBTN;
-
-	@FindBy(xpath = "//*[@class='android.widget.ScrollView']/*[1]//*[@resource-id='com.mydoctor.axa.debug:id/edt_first_name']")
-	MobileElement firstName;
+//
+//	@FindBy(id = "tv_user_name")
+//	MobileElement guestLabel;
+//
+//	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/view_settings']")
+//	MobileElement setting;
+//
+//	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/viewpager'/*[1]")
+//	MobileElement scrollView;
+//
+//	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/view_user_name]")
+//	MobileElement UserNameContainer;
+//
+//	@FindBy(xpath = "//*[@resource-id='com.mydoctor.axa.debug:id/trudoctoolbar']/*[1]")
+//	MobileElement editProfileBTN;
+//
+//	@FindBy(xpath = "//*[@class='android.widget.ScrollView']/*[1]//*[@resource-id='com.mydoctor.axa.debug:id/edt_first_name']")
+//	MobileElement firstName;
 
 	@FindBy(id = "ReadingsMoretitleLabel")
 	MobileElement readings;
+	
+	@FindBy(id = "SettingsMoretitleLabel")
+	MobileElement settings;
+	
 
 	@FindBy(id = "view_reminders")
 	MobileElement reminders;
@@ -146,6 +150,13 @@ public class sideMenu extends PageBase {
 		waitUntilElementClickableAndClick(readings);
 		  
 	}
+	
+	
+	
+	public void clickonsettings(){
+		waitUntilElementClickableAndClick(settings);
+		
+	}
 
 	public void clickOnReminders() {
 		waitForElement(sideMenu);
@@ -203,26 +214,26 @@ public class sideMenu extends PageBase {
 
 	}
 
-	protected void scrollDown(MobileElement element) {
-
-		try {
-			waitForElement(UserNameContainer);
-
-			TouchAction action = new TouchAction(driver);
-			action.press(PointOption.point(0, 1500)).waitAction().moveTo(PointOption.point(0, 500)).release().perform();
-
-			/*
-			 * driver.findElement(MobileBy.
-			 * AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)" +
-			 * ".instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + "Settings" +
-			 * "\").instance(0))"));
-			 */
-			waitForElement(element);
-
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-
-	}
+//	protected void scrollDown(MobileElement element) {
+//
+//		try {
+//			waitForElement(UserNameContainer);
+//
+//			TouchAction action = new TouchAction(driver);
+//			action.press(PointOption.point(0, 1500)).waitAction().moveTo(PointOption.point(0, 500)).release().perform();
+//
+//			/*
+//			 * driver.findElement(MobileBy.
+//			 * AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)" +
+//			 * ".instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + "Settings" +
+//			 * "\").instance(0))"));
+//			 */
+//			waitForElement(element);
+//
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//
+//	}
 
 }
