@@ -37,7 +37,7 @@ public class TestBase {
 	@BeforeSuite
 	public void setup () {
 		
-		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/src/test/java/TestData/Ios-Automation"+Helper.GetCurrentTime()+".html"));
+		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/src/test/java/TestData/OneHealth-Ios-Automation "+Helper.GetCurrentTime()+".html"));
 		report=new ExtentReports();
 		report.attachReporter(extent);
 	}

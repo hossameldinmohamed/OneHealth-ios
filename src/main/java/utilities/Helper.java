@@ -55,7 +55,7 @@ public class Helper {
 
 	public static String GetCurrentTime () {
 
-		DateFormat format = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
+		DateFormat format = new SimpleDateFormat("DD_mm_yyyy_HH_mm_ss");
 		Date date=new Date();
 		return  format.format(date);
 
