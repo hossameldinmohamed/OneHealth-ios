@@ -3,22 +3,24 @@ package pages;
 import java.util.HashMap;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.FindBy;
-
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 
-public class AddNewReadingPage extends PageBase {
+/* This is a class for Automating Reading Module in One Health App
+* Created By : Hossam Eldin
+* */
 
 
-	public static String currentReadingValue;
+public class ReadingPage extends PageBase {
+
+
+	public static String currentReadingStatus;// Variabel to hold the current reading Status to be able to compare it with the expected on
     public int i = 0 ;
 
 
 
-	public AddNewReadingPage(AppiumDriver<MobileElement> driver) {
+	public ReadingPage(AppiumDriver<MobileElement> driver) {
 		super(driver);
 	}
 
@@ -297,8 +299,8 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(stepsvalue , value);
 		clickOn(add_btn);
 		waitForElement(stepsstatus);
-		currentReadingValue = stepsstatus.getText().toString();
-        return currentReadingValue;
+		currentReadingStatus = stepsstatus.getText().toString();
+        return currentReadingStatus;
 	} 
 
 
@@ -311,8 +313,8 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(bloodsugarvalue , Value);
 		clickOn(add_btn);
 		waitForElement(bloodSugerStatus);
-		currentReadingValue = bloodSugerStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = bloodSugerStatus.getText().toString();
+		return currentReadingStatus;
 
 		//clickOn(bloodfoodPreference);
 
@@ -352,8 +354,8 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(oxygentvalue , value);
 		clickOn(add_btn);
 		waitForElement(OxygenLevelStatus);
-		currentReadingValue = OxygenLevelStatus.getText().toString();
-		return currentReadingValue ;
+		currentReadingStatus = OxygenLevelStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -372,11 +374,11 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(Diastolicvalue , diastolic);
 		clickOn(add_btn);
 		waitForElement(bloodPressureStatus);
-		currentReadingValue = bloodPressureStatus.getText().toString();
+		currentReadingStatus = bloodPressureStatus.getText().toString();
 		
 		
 
-		return currentReadingValue;
+		return currentReadingStatus;
 
 
 	}
@@ -395,8 +397,8 @@ public class AddNewReadingPage extends PageBase {
 		clickOn(add_btn);
 
 		waitForElement(HeartRateStatus);
-		currentReadingValue = HeartRateStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = HeartRateStatus.getText().toString();
+		return currentReadingStatus;
 
 
 	}
@@ -416,8 +418,8 @@ public class AddNewReadingPage extends PageBase {
 		clickOn(add_btn);
 
 		waitForElement(TemperatureStatus);
-		currentReadingValue = TemperatureStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = TemperatureStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -437,8 +439,8 @@ public class AddNewReadingPage extends PageBase {
 
 		//	Scrollto("Respiration Rate");
 		waitForElement(RespirationRateStatus);
-		currentReadingValue = RespirationRateStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = RespirationRateStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -454,8 +456,8 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(BMIHeightvalue , hieght);
 		clickOn(add_btn);
 		waitForElement(BMIStatus);
-		currentReadingValue = BMIStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = BMIStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -472,8 +474,8 @@ public class AddNewReadingPage extends PageBase {
 		clickOn(add_btn);
   
 		waitForElement(BonesMassStatus);
-		currentReadingValue = BonesMassStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = BonesMassStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -493,11 +495,11 @@ public class AddNewReadingPage extends PageBase {
 		Scrollto(MusclesMassvalue);
 		}
 		waitForElement(MusclesMassStatus);
-		currentReadingValue = MusclesMassStatus.getText().toString();
+		currentReadingStatus = MusclesMassStatus.getText().toString();
 		i++;
 		
 
-		return currentReadingValue;
+		return currentReadingStatus;
 
 	}
 
@@ -514,8 +516,8 @@ public class AddNewReadingPage extends PageBase {
 		clearAndSetText(BodyFatsvalue , value);
 		clickOn(add_btn);
 		waitForElement(BodyFatsStatus);
-		currentReadingValue = BodyFatsStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = BodyFatsStatus.getText().toString();
+		return currentReadingStatus;
 
 	}
 
@@ -531,8 +533,8 @@ public class AddNewReadingPage extends PageBase {
 		clickOn(add_btn);
 
 		waitForElement(BodyWaterStatus);
-		currentReadingValue = BodyWaterStatus.getText().toString();
-		return currentReadingValue;
+		currentReadingStatus = BodyWaterStatus.getText().toString();
+		return currentReadingStatus;
 	}
 
 

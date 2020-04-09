@@ -7,7 +7,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.*;
 import io.appium.java_client.pagefactory.iOSFindBy;
-public class LoginPageEN_AR extends PageBase {
+public class LoginPage extends PageBase {
 
 	LanguageFirstPage LanguageFirstPageObj=null;
 //	HomePage HomePageObj=null;
@@ -23,7 +23,7 @@ public class LoginPageEN_AR extends PageBase {
 		// policiesTermsObj = new policiesTerms(driver);
 	}
 
-	public LoginPageEN_AR(AppiumDriver<MobileElement> driver) {
+	public LoginPage(AppiumDriver<MobileElement> driver) {
 		super(driver);
 		// this.driver = driver;
 	}

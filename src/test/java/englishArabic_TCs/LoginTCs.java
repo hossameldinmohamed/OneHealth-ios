@@ -1,14 +1,10 @@
 package englishArabic_TCs;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pages.AddNewReadingPage;
-import pages.LoginPageEN_AR;
-import pages.sideMenu;
-import pages.HomePage;
-import pages.LanguageFirstPage;
+import pages.*;
+import pages.LoginPage;
 
 public class LoginTCs extends TestBase {
 
@@ -17,19 +13,19 @@ public class LoginTCs extends TestBase {
 	boolean expectedResult = true;
 
 	// Objects from classes
-	LoginPageEN_AR LoginPageEN_AR_Obj = null;
+	LoginPage LoginPageEN_AR_Obj = null;
 	sideMenu sideMenu_Obj = null;
 	HomePage homePage_Obj = null;
-	AddNewReadingPage addNewReadingPage_Obj = null;
+	ReadingPage addNewReadingPage_Obj = null;
     LanguageFirstPage languge;
 	
 	@BeforeClass
 	// @BeforeMethod(dependsOnMethods = "launchApp")
 	private void initializeObjects() {
 		try {
-			LoginPageEN_AR_Obj = new LoginPageEN_AR(driver);
+			LoginPageEN_AR_Obj = new LoginPage(driver);
 	      	sideMenu_Obj = new sideMenu(driver);
-			addNewReadingPage_Obj = new AddNewReadingPage(driver);
+			addNewReadingPage_Obj = new ReadingPage(driver);
 			homePage_Obj = new HomePage(driver);
 			languge = new LanguageFirstPage(driver);
 		} catch (Exception e) {
