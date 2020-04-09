@@ -1,9 +1,6 @@
 package utilities;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -55,7 +52,7 @@ public class Helper {
 
 	public static String GetCurrentTime () {
 
-		DateFormat format = new SimpleDateFormat("DD_mm_yyyy_HH_mm_ss");
+		DateFormat format = new SimpleDateFormat("dd MMMM YYYY hh:mm:ss");
 		Date date=new Date();
 		return  format.format(date);
 
