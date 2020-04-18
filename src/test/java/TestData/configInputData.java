@@ -22,8 +22,8 @@ public class configInputData {
 
 
 	// User|Pass Application Data
-	public static final String phoneNubmer = "1019544789"; // 1006147962  
-	public static final String Password = "asd12345";
+	public static final String phoneNubmer = "1019544777"; // 1006147962  //1019544777 asdasd123@  //1019544789 asd12345
+	public static final String Password = "asdasd123@";
     public static final String AppLanguage = "Arabic";
 
 

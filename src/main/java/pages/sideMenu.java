@@ -10,7 +10,6 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class sideMenu extends PageBase {
 
-	myProfileEditPage myProfileEditPageObj;
 	LoginPage loginPageEN_AR_Obj;
 	settingsPage settingsPageObj;
 

@@ -1,4 +1,4 @@
-package englishArabic_TCs;
+package TestCases;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -17,7 +17,7 @@ public class ReadingsTCs extends TestBase {
 
 
 	ReadingPage ReadingObject = null;
-	LoginPage LoginObject = null;
+	//LoginPage LoginObject = null;
 	sideMenu sideMenuObject = null;
 	HomePage homePageObject = null;
 
@@ -26,7 +26,6 @@ public class ReadingsTCs extends TestBase {
 	private void initializeObjects() {
 		try {
 			sideMenuObject = new sideMenu(driver);
-			LoginObject = new LoginPage(driver);
 			homePageObject = new HomePage(driver);
 			ReadingObject =new ReadingPage(driver);
 		} catch (Exception e) {
@@ -130,23 +129,23 @@ public class ReadingsTCs extends TestBase {
 	//////////////////////////////////// Tests /////////////////////////////////
 
 
-	@Test(priority = 1, enabled = false)
-	public void login() {
-		// Create Test Case For login 
-		logger = report.createTest("Login To OneHealth");	
-		//Login with Valid User Name & Password
-		LoginObject.loginWithRegisteredUser(configInputData.phoneNubmer,configInputData.Password);
-		logger.info("Add Phone number and Password " );
+//	@Test(priority = 1, enabled = false)
+//	public void login() {
+//		// Create Test Case For login
+//		logger = report.createTest("Login To OneHealth");
+//		//Login with Valid User Name & Password
+//		LoginObject.loginWithRegisteredUser(configInputData.phoneNubmer,configInputData.Password);
+//		logger.info("Add Phone number and Password " );
+//
+//		//Log Pass Status
+//		logger.pass("User logged in successfully");
+//
+//
+//
+//	}
 
-		//Log Pass Status
-		logger.pass("User logged in successfully");
 
-
-
-	}
-
-
-	@Test(priority = 2 , enabled = true )
+	@Test(priority = 1 , enabled = true )
 	public void showAllReadingsCells() {
 		// Method to Show all Readings Cards 
 

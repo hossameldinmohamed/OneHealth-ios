@@ -1,19 +1,16 @@
-package englishArabic_TCs;
+package TestCases;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import utilities.Helper;
 
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -40,15 +37,18 @@ public class TestBase {
 		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/src/test/java/TestData/OneHealth-Ios-Automation "+Helper.GetCurrentTime()+".html"));
 		report=new ExtentReports();
 		report.attachReporter(extent);
-	}
-	
-	// @BeforeMethod(alwaysRun = true)
-	@BeforeClass
-	protected static void launchApp() {
-		//androidCapabilities();
+
 		iOSCapabilities();
 
 	}
+	
+//	// @BeforeMethod(alwaysRun = true)
+//	@BeforeClass
+//	protected static void launchApp() {
+//		//androidCapabilities();
+//		iOSCapabilities();
+//
+//	}
 
 	// Take Screen-shot when test case fails and add it to the screen-shot folder
 //	 @AfterMethod(alwaysRun = true)
@@ -123,10 +123,11 @@ public class TestBase {
 	// @AfterSuite
 
 	// @AfterMethod(alwaysRun = true)
-	@AfterClass
+
+	@AfterSuite
 	public void CloseApp() {
 
-		driver.quit();
+		//driver.quit();
 	}
 
 	private static void androidCapabilities() {
